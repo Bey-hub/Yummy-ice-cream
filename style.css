@@ -1,0 +1,265 @@
+/* ---------- GLOBAL STYLE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #e7dadf;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*---------- HEADER ---------- */
+header {
+    background-color: #ffb6c1; /* pastel pink */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color:#fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease; border-bottom: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffe6eb;
+    border-bottom: 2px solid #fff;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    background: linear-gradient(to right, #ffd1dc, #ffb6c1);
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* ---------- BOTTOM ---------- */
+.button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ff6f91;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* ---------- ABOUT SECTION ---------- */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    color: #ff6f91;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ---------- FOOTER ----------*/
+footer {
+    background-color: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px)
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 0.95rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+.hero p {
+    font-size: 1rem;
+    }
+
+.about h2 {
+    font-size: 1.6rem;
+}
+
+/* ---------- CATALOGUE PAGE ----------*/
+.catalogue {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fffafc;
+}
+
+.catalogue h2 {
+    color: #ff6f91;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.catalogue p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3sease;
+}
+
+.item:hover {
+    transform: translateY(-5px)
+    box-shadow: 0 5p 12 rgba(0, 0, 0, 0.15);
+}
+
+.item h3 {
+    color: #ff6f91
+    font-size: 1.3rem;
+    margin bottom: 8px;
+}
+
+.item p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #2a5298
+}
+
+/* ---------- CONTACT PAGE ----------*/
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fffafc;
+}
+
+.contact h2 {
+    color: #ff6f91;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #ff6f91;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #ff6f91
+    color:#fff
+    border: none;
+    border: radius 30px;
+    cursor: pointer;
+    transition: backround-color 0.3s ease;
+}
+
+.contact-form .button:hover {
+    background-color: #ff8fb2;
+}
