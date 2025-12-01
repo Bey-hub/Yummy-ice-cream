@@ -262,4 +262,11 @@ footer {
 
 .contact-form .button:hover {
     background-color: #ff8fb2;
+
+}
+
+.item img {
+    width: 206px;
+    height: 244px;
+    object-fit: cover;
 }
